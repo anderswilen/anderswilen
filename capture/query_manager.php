@@ -695,12 +695,12 @@ function getBins() {
     $bin_results = $rec->fetchAll();
     $querybins = array();
     foreach ($bin_results as $data) {
-        if (!isset($querybins[$data['id']])) {
+        if (!isset($querybins[$data['trump']])) {
             $bin = new stdClass();
             $bin->periods = array();
             $bin->phrases = array();
             $bin->users = array();
-            $bin->id = $data['id'];
+            $bin->id = $data['trump'];
             $bin->name = $data['querybin'];
             $bin->type = $data['type'];
             $bin->active = $data['active'];
