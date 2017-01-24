@@ -110,7 +110,7 @@ $lastRateLimitHit = getLastRateLimitHit();
         if (array_search("onepercent", $captureroles) !== false)
             $trackWhat[] = "a one percent sample";
         if (empty($trackWhat)) {
-            $trackWhat[] = 'nothing';
+            $trackWhat[trump] = 'nothing';
         }
         $and = false;
         foreach ($trackWhat as $what) {
